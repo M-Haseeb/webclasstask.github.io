@@ -1,0 +1,426 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 16px;
+    line-height: 1.6em;
+    background-color: white;
+    color:black;
+}
+
+.mono{
+    position:absolute;
+    width:100%;
+    height:100vh;
+    z-index: 500;
+    top:0;
+    left:0;
+    background-color: white;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.table-content{
+    position:fixed;
+    top:140px;
+    right:-550px;
+    opacity:0;
+    width:500px;
+    height:500px;
+    z-index:10;
+    background-color: rgb(240,210,250);
+    
+    transition: all 0.6s ease;
+}
+
+
+.table-content.on{
+    top:140px;
+    right:0;
+    opacity:1;
+    width:500px;
+    height:500px;
+    z-index:10;
+    background-color: rgb(240,210,250);
+    
+
+}
+.top-content{
+position: relative;
+width:100%;
+display:flex;
+justify-content: center;
+align-items: center;
+text-align: center;
+height:80px;
+border-bottom:1.4px solid black;
+}
+
+.top-content h2{
+    letter-spacing: 1.5px;
+    font-weight: 400;
+    font-size:2rem;
+    font-style:oblique;
+    }
+.low-content{
+    position:relative;
+    width:80%;
+    left:40px;
+    height:100%;
+    }
+.low-content ul li{
+padding:15px 0;
+font-style: italic;
+font-size:1.4rem;
+
+
+} 
+    
+.active{
+    cursor: pointer;
+    position: fixed;
+    margin-top:20%;
+    z-index:50;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    right:0;
+    border:1.8px solid rgba(0,0,0,0.4);
+    width:50px;
+    height:50px;
+    border-radius: 50%;
+    background-color: blue;
+    text-align: center;
+}
+
+
+.active a i{
+    color:white;
+    font-size:2.8rem;
+    font-weight:bold;
+    text-align: center;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.active a{
+  
+    text-align: center;
+    margin-right: 2.5px;
+    margin-bottom:0.5px;
+    font-weight: bold;
+}
+
+header{
+    position:relative;
+    width:100%;
+    height:120px;
+}
+.top-head{
+    position:relative;
+    width:100%;
+background-color: black;
+     height:60px;
+     display:flex;
+     justify-content: center;
+     align-items: center;
+     text-align: center;
+}
+.top-head h1{
+    color:white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    letter-spacing: 1.5px;
+}
+nav{
+    position:relative;
+    width:100%;
+    box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.3);
+     height:60px;
+     display:flex;
+     justify-content: center;
+     align-items: center;
+     text-align: center;
+}
+nav ul{
+    position: relative;
+    width:100%;
+    height:100%;
+    display:flex;
+    justify-content:space-evenly;
+    align-items: center;
+    text-align: center;
+    
+}
+nav ul li:first-child,nav ul li:nth-child(2){
+    border-right: 2px solid rgba(0,0,0,0.3);
+    padding-right: 30px;
+}
+nav ul li{
+    position: relative;
+    height:100%;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    text-align: center;
+    list-style: none;
+  
+    
+    
+}
+
+nav ul li a{
+    text-decoration: none;
+    font-size:1.5rem;
+    font-weight: 600;
+}
+
+.container{
+    position:relative;
+    width:100%;
+    max-width:1300px;
+    margin:auto;
+    
+}
+
+
+
+.main-section{
+    position:relative;
+width: 100%;
+top:30px;
+height:550px;
+background-image: url("../assets/showcase-headphone-tablet.jpg");
+background-position:bottom;
+background-repeat: no-repeat;
+background-size: cover;
+display:flex;
+flex-direction: column;
+align-items: center;
+justify-content:center;
+}
+.main-section p{
+    font-weight:lighter;
+    color:white;
+    font-size:1.2rem;
+    opacity:0.9;
+
+}
+.some{
+    
+    width:37%;
+    text-align: center;
+    opacity:0.84;
+}
+.main-section h1{
+    color:white;
+    margin:17px 0;
+    line-height: 2.8rem;
+    font-weight:bold;
+    font-size:3rem;
+}
+
+.main-btn{
+    display:inline-block;
+    padding:10px 17px;
+margin-top: 5px;
+    cursor:pointer;
+    background-color: orange;
+    color:white;
+    font-weight: 500;
+    font-size:1.5rem;
+    border:1px solid rgba(0,0,0,0.7);
+}
+
+.sec2{
+    position:relative;
+    width: 100%;
+    top:130px;
+    height:400px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sec2-main,.sec3-main{
+    position:relative;
+    width: 100%;
+    height:100%;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.img1{
+    position:relative;
+    width: 45%;
+    height:100%;
+    border-radius:10px;
+    background-image: url("../assets/ear-ring-desktop.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.img2{
+    position:relative;
+    width: 45%;
+    height:100%;
+    border-radius:10px;
+    background-image: url("../assets/boy-image.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.text1{
+    position:relative;
+    width: 45%;
+    height:100%;
+    display:flex;
+    border-radius: 9px;
+    background-color: rgb(241,241,241);
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.text1 h1{
+    margin-bottom: 5px;
+}
+
+.text2{
+    position:relative;
+    width: 45%;
+    height:100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.text1 h1,.text2 h1{
+    font-size:1.8rem;
+}
+.text2 p{
+    text-align: center;
+    margin-top:12px;
+    font-size: 1.2rem;
+    letter-spacing: 0.9px;
+}
+.main2-btn{
+    display:inline-block;
+    padding:13px 20px;
+margin-top: 5px;
+    cursor:pointer;
+    background-color: rgba(240,200,240);
+    color:black;
+    letter-spacing: 1.4px;
+    font-weight: 500;
+    font-size:1.3rem;
+    border:1px solid rgba(0,0,0,0.4);
+}
+
+.sec3{
+    position:relative;
+    top:200px;
+    height:400px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+footer{
+    position:relative;
+    top:240px;
+    width:100%;
+    height:70px;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    text-align: center;
+    background-color: black;
+    
+}
+footer p{
+    color:white;
+    font-size:1.3rem;
+    letter-spacing:0.7px;
+}
+
+
+@media (max-width:800px){
+
+
+    .text2 h1{
+        font-size:1.4rem;
+        text-align: center;
+    }
+    .text2 p{
+        font-size:1rem;
+        letter-spacing: 0;
+        font-weight: 500;
+        width: 90%;
+    }
+}
+
+@media (max-width:420px) {
+    
+    .table-content.on{
+        width:280px;
+    }
+    .top-content h2{
+        font-size:1.3rem;
+    }
+    .low-content ul li{
+        font-size:1.1rem;
+    }
+
+    
+    .active{
+        top:295px;
+        right:2px;
+    }
+   .main-section h1{
+       font-size:2.3rem;
+   }
+   .main-section p{
+    font-size: 1.3rem;
+     
+   }
+   .some{
+       font-size: 1.3rem;
+       width:70%;
+   }
+   .main-btn{
+       padding:12px 15px;
+       font-size:1.2rem;
+   }
+   .sec2{
+       height:600px;
+   }
+   .sec3{
+       height:700px;
+   }
+   .sec2-main,.sec3-main{
+       padding:20px 0;
+       flex-direction: column;
+       justify-content: space-between;
+   }
+   .img1,.text1,.img2,.text2{
+       width:100%;
+       height:45%;
+   }
+
+   footer p{
+       font-size:1rem;
+       font-weight:500;
+       letter-spacing: 0;
+   }
+
+   
+
+.top-content{
+
+}
+}
